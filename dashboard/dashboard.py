@@ -7,8 +7,8 @@ import seaborn as sns
 # Load your datasets
 @st.cache_data
 def load_data():
-    day_data = pd.read_csv('../data/processed_day.csv')
-    hour_data = pd.read_csv('../data/processed_hour.csv')
+    day_data = pd.read_csv('data/processed_day.csv')
+    hour_data = pd.read_csv('data/processed_hour.csv')
     return day_data, hour_data
 
 day, hour = load_data()
