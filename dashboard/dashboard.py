@@ -7,14 +7,14 @@ import seaborn as sns
 # Load your datasets
 @st.cache_data
 def load_data():
-    day_data = pd.read_csv('https://raw.githubusercontent.com/anindyalkwr/bike-sharing-dashboard/main/data/processed_day.csv')
-    hour_data = pd.read_csv('https://raw.githubusercontent.com/anindyalkwr/bike-sharing-dashboard/main/data/processed_hour.csv')
+    day_data = pd.read_csv('../data/processed_day.csv')
+    hour_data = pd.read_csv('../data/processed_hour.csv')
     return day_data, hour_data
 
 day, hour = load_data()
 
 # Sidebar
-st.sidebar.image('../images/dicoding.jpg', caption="This project aims to fulfill the final project requirement from the Dicoding course 'Belajar Analisis Data dengan Python'")
+st.sidebar.image('images/dicoding.jpg', caption="This project aims to fulfill the final project requirement from the Dicoding course 'Belajar Analisis Data dengan Python'")
 
 st.sidebar.header("Filters")
 
@@ -56,12 +56,12 @@ page = st.sidebar.radio("Go to", ["Introduction", "Exploratory Data Analysis", "
 
 # Introduction
 if page == "Introduction":
-    st.image('../images/bangkit.png', caption="Bangkit Academy 2024")
+    st.image('images/bangkit.png', caption="Bangkit Academy 2024")
 
     col1, col2 = st.columns([1, 3])
     
     with col1:
-        st.image('../images/picture.jpeg', caption="Anindya Lokeswara")
+        st.image('images/picture.jpeg', caption="Anindya Lokeswara")
     with col2:
         st.subheader("""
         About Me
