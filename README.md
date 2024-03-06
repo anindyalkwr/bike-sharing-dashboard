@@ -3,6 +3,22 @@
 ## Introduction
 ![Bangkit Academy 2024](images/bangkit.png)
 
+## Running the Streamlit Dashboard
+
+To run the Streamlit dashboard locally, follow these steps:
+
+1. **Create Conda Environment**:
+   ```bash
+   conda create --name main-ds python=3.9
+2. **Activate Conda Environment**:
+   ```bash
+   conda activate main-ds
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+2. **Run the Streamlit Dashboard**:
+   ```bash
+   streamlit run dashboard/dashboard.py
 ### About Me
 ![Anindya Lokeswara](images/picture.jpeg)
 **Anindya Lokeswara**, Machine Learning Cohort at Bangkit Academy 2024. Currently studying computer science at the Faculty of Computer Science, University of Indonesia. Interested in software engineering and data science. Let's connect on [Instagram](https://www.instagram.com/anindyalkwr/) and [LinkedIn](https://www.linkedin.com/in/anindya_lokeswara/).
